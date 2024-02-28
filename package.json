@@ -1,11 +1,17 @@
 {
   "name": "simple-client-server",
   "packageManager": "yarn@4.1.0",
+  "scripts": {
+    "build": "node ./scripts/release-build.mjs",
+    "start": "cd ./build && node ./index.js"
+  },
   "devDependencies": {
+    "@types/node": "^20.11.21",
     "@typescript-eslint/eslint-plugin": "^7.0.2",
     "@typescript-eslint/parser": "^7.0.2",
     "eslint": "^8.57.0",
     "eslint-plugin-vue": "^9.22.0",
+    "execa": "^8.0.1",
     "typescript": "^5.3.3"
   },
   "workspaces": [
